@@ -7,7 +7,7 @@
   "titleProperty": "title",
   "customHeadContentPath": "",
   "faviconPath": "",
-  "documentWidth": "40em",
+  "documentWidth": "60em",
   "sidebarWidth": "20em",
   "minOutlineCollapse": 100,
   "startOutlineCollapsed": false,
@@ -25,10 +25,10 @@
   "addSearchBar": false,
   "addGraphView": false,
   "addTitle": true,
-  "addRSSFeed": true,
+  "addRSSFeed": false,
   "siteURL": "",
   "authorName": "",
-  "vaultTitle": "TestSite",
+  "vaultTitle": "Portfolio",
   "exportPreset": "website",
   "openAfterExport": false,
   "graphAttractionForce": 1,
@@ -43,7 +43,7 @@
   "defaultFileIcon": "lucide//file",
   "defaultFolderIcon": "lucide//folder",
   "defaultMediaIcon": "lucide//file-image",
-  "exportPath": "D:\\\\Other\\Documents\\Portfolio",
+  "exportPath": "D:\\\\Other\\Github\\northmatt.github.io\\docs",
   "filesToExport": [
     []
   ]
