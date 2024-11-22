@@ -66544,6 +66544,8 @@ var Webpage = class extends Downloadable {
               this.title = firstHeader.innerHTML;
               ExportLog.log(`Using "${firstHeaderText}" header as title because it was H1 at the top of the page`);
             } else {
+              (_f = firstHeader.querySelector(".heading-collapse-indicator")) == null ? void 0 : _f.remove();
+              this.title = firstHeader.innerHTML;
               ExportLog.log(`Replacing "${firstHeaderText}" header because it was H1 at the top of the page`);
             }
             firstHeader.remove();
