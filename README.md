@@ -1,1 +1,3 @@
-# northmatt.github.io
+# [northmatt.github.io](https://northmatt.github.io)
+
+Github Pages website for a programming job portfolio. It was created in [Obsidian](https://obsidian.md) with [Webpage HTML Export](https://github.com/KosmosisDire/obsidian-webpage-export), [Obsidian Style Settings](https://github.com/mgmeyers/obsidian-style-settings), and [Editing Toolbar](https://github.com/PKM-er/obsidian-editing-toolbar) plugins.

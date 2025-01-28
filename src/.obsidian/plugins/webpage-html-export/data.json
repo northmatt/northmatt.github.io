@@ -2,7 +2,7 @@
   "settingsVersion": "1.8.01",
   "makeOfflineCompatible": false,
   "inlineAssets": false,
-  "includePluginCSS": "",
+  "includePluginCSS": "dataview",
   "includeSvelteCSS": false,
   "titleProperty": "title",
   "customHeadContentPath": "",
@@ -28,7 +28,7 @@
   "addRSSFeed": false,
   "siteURL": "",
   "authorName": "",
-  "vaultTitle": "Portfolio",
+  "vaultTitle": "src",
   "exportPreset": "website",
   "openAfterExport": false,
   "graphAttractionForce": 1,
@@ -43,8 +43,10 @@
   "defaultFileIcon": "lucide//file",
   "defaultFolderIcon": "lucide//folder",
   "defaultMediaIcon": "lucide//file-image",
-  "exportPath": "D:\\\\Other\\Github\\northmatt.github.io\\docs",
+  "exportPath": "D:\\\\Other\\Documents\\northmatt.github.io\\docs",
   "filesToExport": [
-    []
+    [
+      "all"
+    ]
   ]
 }
