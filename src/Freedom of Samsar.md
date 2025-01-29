@@ -1,14 +1,14 @@
 ---
 title: Matthew's Portfolio - Freedom of Samsar
 tags:
-  - WebsitePage
+  - WebsitePage/Game
   - Project
   - Shipped
-pageImg: D:///Other/Documents/northmatt.github.io/src/image/Freedom%20of%20Samsar%20Title.png
+pageImg: "![[Freedom of Samsar Title.png]]"
 pageDesc: |-
-  - There is too much FoS cheese. 
-  - What are doing with that cheeeese?
-  - The cheese is dangerous, give it to me so I can eat it.
+  There is too much FoS cheese. 
+  What are doing with that cheeeese?
+  The cheese is dangerous, give it to me so I can eat it. Dangerous cheese is good cheese. Not only can you use it for C4, but you can also use it for eating.
 pageRank: "0"
 ---
 # <center>Matthew North - Portfolio - Freedom of Samsar</center>

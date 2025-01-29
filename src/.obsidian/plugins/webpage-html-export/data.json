@@ -3,7 +3,7 @@
   "makeOfflineCompatible": false,
   "inlineAssets": false,
   "includePluginCSS": "dataview",
-  "includeSvelteCSS": false,
+  "includeSvelteCSS": true,
   "titleProperty": "title",
   "customHeadContentPath": "",
   "faviconPath": "",
@@ -43,7 +43,7 @@
   "defaultFileIcon": "lucide//file",
   "defaultFolderIcon": "lucide//folder",
   "defaultMediaIcon": "lucide//file-image",
-  "exportPath": "D:\\\\Other\\Documents\\northmatt.github.io\\docs",
+  "exportPath": "D:\\\\Other\\Obsidian\\northmatt.github.io\\docs",
   "filesToExport": [
     [
       "all"

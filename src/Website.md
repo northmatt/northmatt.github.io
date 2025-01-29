@@ -1,13 +1,13 @@
 ---
 title: Matthew's Portfolio - Website
 tags:
-  - WebsitePage
+  - WebsitePage/Website
   - Project
-pageImg: https://forum.obsidian.md/uploads/default/original/3X/4/4/44afcb0e6d173ace73a4a8288b5af791b93d4b0a.png
+pageImg: "![[Freedom of Samsar Title.png]]"
 pageDesc: |-
-  - There is too much W cheese. 
-  - Whaaaat are doing with that cheese?
-  - The cheese is dangerous, give it to me so I can eat it.
+  There is too much W cheese. 
+  Whaaaat are doing with that cheese?
+  The cheese is dangerous, give it to me so I can eat it.
 pageRank: "9"
 ---
 # <center>Matthew North - Portfolio - Website</center>
