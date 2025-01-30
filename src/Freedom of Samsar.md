@@ -4,7 +4,7 @@ tags:
   - WebsitePage/Game
   - Project
   - Shipped
-pageImg: "![[Freedom of Samsar Title.png]]"
+pageImg: "![[Freedom of Samsar Title.jpg]]"
 pageDesc: |-
   There is too much FoS cheese. 
   What are doing with that cheeeese?
@@ -12,3 +12,4 @@ pageDesc: |-
 pageRank: "0"
 ---
 # <center>Matthew North - Portfolio - Freedom of Samsar</center>
+A game about killing monsters with a sword and powers.

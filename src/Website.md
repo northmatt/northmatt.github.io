@@ -3,7 +3,7 @@ title: Matthew's Portfolio - Website
 tags:
   - WebsitePage/Website
   - Project
-pageImg: "![[Freedom of Samsar Title.png]]"
+pageImg: "![[Website Portfolio.png]]"
 pageDesc: |-
   There is too much W cheese. 
   Whaaaat are doing with that cheese?
@@ -11,7 +11,6 @@ pageDesc: |-
 pageRank: "9"
 ---
 # <center>Matthew North - Portfolio - Website</center>
-
 I created the site in [Obsidian](https://obsidian.md) and the repo can be found [here](https://github.com/northmatt/northmatt.github.io).
 
 %%
