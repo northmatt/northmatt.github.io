@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -150,12 +151,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3a94e0144873d4d4",
+  "active": "973c045b8657134b",
   "lastOpenFiles": [
-    "Website.md",
-    "Table Fable.md",
     "Mecha Mayhem.md",
     "Index.md",
+    "Website.md",
+    "Table Fable.md",
     "Freedom of Samsar.md",
     "Celestial Conquest.md",
     "Barotrauma.md",

@@ -3,7 +3,7 @@
   "makeOfflineCompatible": false,
   "inlineAssets": false,
   "includePluginCSS": "dataview",
-  "includeSvelteCSS": true,
+  "includeSvelteCSS": false,
   "titleProperty": "title",
   "customHeadContentPath": "",
   "faviconPath": "",

@@ -8,9 +8,13 @@ pageDesc: |-
   There is too much W cheese. 
   Whaaaat are doing with that cheese?
   The cheese is dangerous, give it to me so I can eat it.
-pageRank: "9"
+pageRank: 10
 ---
-# <center>Matthew North - Portfolio - Website</center>
+%%
+dataviewjs thing here
+``$= app.fileManager.processFrontMatter(app.vault.getFileByPath(dv.current().file.path), (fm) => { fm.title = `${dv.page("Index").firstName}'s Portfolio - ${dv.current().name ? dv.current().name : dv.current().file.name}`; } ); ``
+%%
+# ``$= `${dv.page("Index").firstName} ${dv.page("Index").lastName} - Portfolio - ${dv.current().name ? dv.current().name : dv.current().file.name}` ``
 I created the site in [Obsidian](https://obsidian.md) and the repo can be found [here](https://github.com/northmatt/northmatt.github.io).
 
 %%
@@ -27,4 +31,16 @@ Using `<CD></CD>` HTML tag:
 function renderMarkdownView > preview.postProcess
 function renderSimpleMarkdown > import_obsidian8.MarkdownRenderer.render
 function renderCompactMarkdown > obsidian.MarkdownRenderer.render
+
+`` app.metadataCache.getCache(dv.current().file.path).frontmatter.title = `${dv.page("Index").firstName}'s Portfolio - ${dv.current().name ? dv.current().name : dv.current().file.name}` ``
+
+Reduce font files
+
+Use JS for title property
+
+https://blacksmithgu.github.io/obsidian-dataview/annotation/add-metadata/
+https://docs.obsidian.md/Reference/TypeScript+API/CachedMetadata
+https://docs.obsidian.md/Reference/TypeScript+API/Vault
+
+Website.getTitleAndIcon() > frontmatter=...
 %%

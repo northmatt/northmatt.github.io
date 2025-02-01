@@ -9,7 +9,11 @@ pageDesc: |-
   There is too much TF cheese. 
   What are doingggg with that cheese?
   The cheese is dangerous, give it to me so I can eat it.
-pageRank: "6"
+pageRank: 6
 ---
-# <center>Matthew North - Portfolio - Table Fable</center>
+%%
+dataviewjs thing here
+``$= app.fileManager.processFrontMatter(app.vault.getFileByPath(dv.current().file.path), (fm) => { fm.title = `${dv.page("Index").firstName}'s Portfolio - ${dv.current().name ? dv.current().name : dv.current().file.name}`; } ); ``
+%%
+# ``$= `${dv.page("Index").firstName} ${dv.page("Index").lastName} - Portfolio - ${dv.current().name ? dv.current().name : dv.current().file.name}` ``
 A game about cards.
