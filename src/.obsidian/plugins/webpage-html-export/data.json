@@ -4,7 +4,7 @@
   "inlineAssets": false,
   "includePluginCSS": "dataview",
   "includeSvelteCSS": false,
-  "titleProperty": "title",
+  "titleProperty": "pageTitle",
   "customHeadContentPath": "",
   "faviconPath": "",
   "documentWidth": "60em",

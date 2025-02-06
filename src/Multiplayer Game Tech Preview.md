@@ -1,27 +1,23 @@
 ---
 tags:
   - WebsitePage
-  - Project/Game
-  - Shipped
+  - Project/TechPreview
   - Skill/Language/CS
   - Skill/GameEngine/Unity
   - Skill/DeveloperTool/Github
   - Skill/DeveloperTool/VisualStudio
-pageTitle: Matthew's Portfolio - Table Fable
-pageImg: "![[Table Fable Title.png]]"
+pageTitle: Matthew's Portfolio - Multiplayer Game Tech Preview
+pageImg: "![[Multiplayer Demo Title.png]]"
 pageDesc: |-
-  Designed and developed interactive animations for cards and particle animations for ambient objects.
-  Developed essential features for card interaction in 3D world and for spectating.
-pageRank: 6
-projectDateStart: 2022-01-01
-projectDateEnd: 2022-04-01
-projectTeam: |-
-  2 Programmers
-  2 Artists
-  1 Game Designer
-  1 Audio Engineer
-projectRole: Programmer
-projectDesc: PvP card game with local/online multiplayer.
+  Implemented networking via C# NET sockets.
+  Implemented a chat system, a lobby system, the ability to support up to 255 clients at a time.
+  Implemented predictive movement with dead reckoning.
+pageRank: 12
+projectDateStart: 2023-03-25
+projectDateEnd: 2023-04-01
+projectTeam: 1 Programmer
+projectRole: Lead Programmer
+projectDesc: A tech preview about multiplayer.
 ---
 %%
 dataviewjs thing here
@@ -36,7 +32,7 @@ dv.table(["Engine", "Team", "Role", "Timeline"], [[
 ],
 dv.current().projectTeam.split("\n"),
 [dv.current().projectRole],
-`${dv.current().projectDateStart.toFormat("MMM y")} - ${dv.current().projectDateEnd.toFormat("MMM y")}, ${dv.current().projectDateEnd.diff(dv.current().projectDateStart, "months").toHuman()}`.split(", ")
+`${dv.current().projectDateStart.toFormat("MMM y")} - ${dv.current().projectDateEnd.toFormat("MMM y")}, ${dv.current().projectDateEnd.diff(dv.current().projectDateStart, "weeks").toHuman()}`.split(", ")
 ]])
 ```
 ## Game Description
@@ -44,13 +40,6 @@ dv.current().projectTeam.split("\n"),
 
 
 %%
-Candle animation
-Card handsplay animation
-Volume control
-Worldspace cursor
-Spectator Controller
 
-https://github.com/Jonathan-Jay/Card-Game
-https://jjthething.itch.io/table-fable
-https://youtu.be/vwXxnK0DSIo
+Hmm
 %%

@@ -4,6 +4,7 @@
     "cssclasses": "multitext",
     "tags": "tags",
     "pageRank": "number",
-    "test": "text"
+    "test": "text",
+    "projectDateStart": "date"
   }
 }

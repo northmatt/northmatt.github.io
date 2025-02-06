@@ -1,21 +1,42 @@
 ---
-title: Matthew's Portfolio - Website
 tags:
-  - WebsitePage/Website
-  - Project
+  - WebsitePage
+  - Project/Website
+  - Skill/Language/HTML
+  - Skill/Language/CSS
+  - Skill/Language/YAML
+  - Skill/Language/Markdown
+  - Skill/DeveloperTool/Github
+  - Skill/DeveloperTool/Obsidian
+  - Skill/DeveloperTool/Krita
+pageTitle: Matthew's Portfolio - Website
 pageImg: "![[Website Portfolio.png]]"
 pageDesc: |-
-  There is too much W cheese. 
-  Whaaaat are doing with that cheese?
-  The cheese is dangerous, give it to me so I can eat it.
+  Developed website in a database like structure.
+  Modified existing JS libraries for essential formatting fixes.
 pageRank: 10
+projectDateStart: 2025-01-01
+projectDateEnd: 2025-02-01
+projectTeam: 1 Developer
+projectRole: Lead Developer
+projectDesc: Created the site in [Obsidian](https://obsidian.md) and the repo can be found [here](https://github.com/northmatt/northmatt.github.io).
 ---
 %%
 dataviewjs thing here
-``$= app.fileManager.processFrontMatter(app.vault.getFileByPath(dv.current().file.path), (fm) => { fm.title = `${dv.page("Index").firstName}'s Portfolio - ${dv.current().name ? dv.current().name : dv.current().file.name}`; } ); ``
+``$= app.fileManager.processFrontMatter(app.vault.getFileByPath(dv.current().file.path), (fm) => { fm.pageTitle = `${dv.page("Index").firstName}'s Portfolio - ${dv.current().name ? dv.current().name : dv.current().file.name}`; } ); ``
 %%
-# ``$= `${dv.page("Index").firstName} ${dv.page("Index").lastName} - Portfolio - ${dv.current().name ? dv.current().name : dv.current().file.name}` ``
-I created the site in [Obsidian](https://obsidian.md) and the repo can be found [here](https://github.com/northmatt/northmatt.github.io).
+# ``$= `${dv.page("Index").firstName} ${dv.page("Index").lastName} - Portfolio - ${dv.current().pageName ? dv.current().pageName : dv.current().file.name}` ``
+```dataviewjs
+dv.table(["Language", "Team", "Role", "Timeline"], [[
+dv.current().tags.filter(a => a.contains("Language")).map(a => a.split("/")[2].replace("CPP", "C++")),
+dv.current().projectTeam.split("\n"),
+[dv.current().projectRole],
+`${dv.current().projectDateStart.toFormat("MMM y")} - ${dv.current().projectDateEnd.toFormat("MMM y")}, ${dv.current().projectDateEnd.diff(dv.current().projectDateStart, "months").toHuman()}`.split(", ")
+]])
+```
+## Project Description
+* `$= dv.current().projectDesc`
+
 
 %%
 Modified `webpage-html-export.main.Webpage.AddTitle()`:
@@ -28,19 +49,14 @@ Using `<CD></CD>` HTML tag:
 * Tags that dont exist allow for some markdown inside inline HTML code. Won't show up in editing view, only reading view and HTML exports.
 * Useful for when human readable markdown formatting could be used rather than not so human readable HTML formatting.
 
-function renderMarkdownView > preview.postProcess
-function renderSimpleMarkdown > import_obsidian8.MarkdownRenderer.render
-function renderCompactMarkdown > obsidian.MarkdownRenderer.render
+Reduce font files (look at obsidian.css)
+Use Column Markdown plugin instead of dataview for project pages
+Project Links
+Horizontal navigation bar
+Templater for updating front matter
 
-`` app.metadataCache.getCache(dv.current().file.path).frontmatter.title = `${dv.page("Index").firstName}'s Portfolio - ${dv.current().name ? dv.current().name : dv.current().file.name}` ``
+https://blacksmithgu.github.io/obsidian-dataview
+https://docs.obsidian.md/Home
 
-Reduce font files
-
-Use JS for title property
-
-https://blacksmithgu.github.io/obsidian-dataview/annotation/add-metadata/
-https://docs.obsidian.md/Reference/TypeScript+API/CachedMetadata
-https://docs.obsidian.md/Reference/TypeScript+API/Vault
-
-Website.getTitleAndIcon() > frontmatter=...
+`app.metadataCache.getCache(dv.current().file.path).frontmatter`
 %%

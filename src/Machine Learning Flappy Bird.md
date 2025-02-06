@@ -1,27 +1,25 @@
 ---
 tags:
   - WebsitePage
-  - Project/Game
-  - Shipped
+  - Project/TechPreview
   - Skill/Language/CS
   - Skill/GameEngine/Unity
+  - Skill/LibraryFramework/PyTorch
+  - Skill/LibraryFramework/UnityMLAgents
   - Skill/DeveloperTool/Github
   - Skill/DeveloperTool/VisualStudio
-pageTitle: Matthew's Portfolio - Table Fable
-pageImg: "![[Table Fable Title.png]]"
+pageTitle: Matthew's Portfolio - Machine Learning Flappy Bird
+pageImg: "![[Flappy Bird Title.png]]"
 pageDesc: |-
-  Designed and developed interactive animations for cards and particle animations for ambient objects.
-  Developed essential features for card interaction in 3D world and for spectating.
-pageRank: 6
-projectDateStart: 2022-01-01
-projectDateEnd: 2022-04-01
-projectTeam: |-
-  2 Programmers
-  2 Artists
-  1 Game Designer
-  1 Audio Engineer
-projectRole: Programmer
-projectDesc: PvP card game with local/online multiplayer.
+  Used reinforcement learning on a neural network to train the bird to pass pipes.
+  Used PyTorch with CUDA and Unity ML Agents libraries for training the network.
+  Used Tensorboard for viewing realtime training information.
+pageRank: 12
+projectDateStart: 2023-03-25
+projectDateEnd: 2023-04-01
+projectTeam: 1 Programmer
+projectRole: Lead Programmer
+projectDesc: A tech preview about birds.
 ---
 %%
 dataviewjs thing here
@@ -36,7 +34,7 @@ dv.table(["Engine", "Team", "Role", "Timeline"], [[
 ],
 dv.current().projectTeam.split("\n"),
 [dv.current().projectRole],
-`${dv.current().projectDateStart.toFormat("MMM y")} - ${dv.current().projectDateEnd.toFormat("MMM y")}, ${dv.current().projectDateEnd.diff(dv.current().projectDateStart, "months").toHuman()}`.split(", ")
+`${dv.current().projectDateStart.toFormat("MMM y")} - ${dv.current().projectDateEnd.toFormat("MMM y")}, ${dv.current().projectDateEnd.diff(dv.current().projectDateStart, "weeks").toHuman()}`.split(", ")
 ]])
 ```
 ## Game Description
@@ -44,13 +42,6 @@ dv.current().projectTeam.split("\n"),
 
 
 %%
-Candle animation
-Card handsplay animation
-Volume control
-Worldspace cursor
-Spectator Controller
 
-https://github.com/Jonathan-Jay/Card-Game
-https://jjthething.itch.io/table-fable
-https://youtu.be/vwXxnK0DSIo
+Hmm
 %%
