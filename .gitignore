@@ -1,0 +1,5 @@
+src/.obsidian/plugins
+src/.obsidian/types.json
+src/.obsidian/workspace.json
+
+!src/.obsidian/plugins/webpage-html-export

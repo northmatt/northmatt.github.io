@@ -1,0 +1,12 @@
+body {
+	--heading-spacing: calc(var(--p-spacing) * 0.75);
+}
+
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6 {
+	margin-block-end: calc(var(--p-spacing) * 0.25);
+}

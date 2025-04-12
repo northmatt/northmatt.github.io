@@ -1,0 +1,25 @@
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.blurhash {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.fullq {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*
+https://autocompressor.net/blog/progressive-avif
+<div class="parent">
+	<img src="" alt="" class="blurhash" width="100%">
+	<img src="" alt="" class="fullq" width="100%">
+</div>
+*/

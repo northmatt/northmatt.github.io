@@ -1,0 +1,9 @@
+{
+  "enabledCssSnippets": [
+    "HeaderAlignCenter",
+    "EditorWidth",
+    "ThinColumns",
+    "ThinHeader",
+    "CenterAlignHeader"
+  ]
+}
