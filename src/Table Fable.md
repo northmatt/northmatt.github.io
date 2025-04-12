@@ -1,46 +1,73 @@
 ---
-tags:
-  - WebsitePage
-  - Project/Game
-  - Shipped
-  - Skill/Language/CS
-  - Skill/GameEngine/Unity
-  - Skill/DeveloperTool/Github
-  - Skill/DeveloperTool/VisualStudio
 pageTitle: Matthew's Portfolio - Table Fable
-pageImg: "![[Table Fable Title.png]]"
-pageDesc: |-
-  Designed and developed interactive animations for cards and particle animations for ambient objects.
-  Developed essential features for card interaction in 3D world and for spectating.
-pageRank: 6
-projectDateStart: 2022-01-01
-projectDateEnd: 2022-04-01
-projectTeam: |-
-  2 Programmers
-  2 Artists
-  1 Game Designer
-  1 Audio Engineer
-projectRole: Programmer
-projectDesc: PvP card game with local/online multiplayer.
 ---
 %%
-dataviewjs thing here
-``$= app.fileManager.processFrontMatter(app.vault.getFileByPath(dv.current().file.path), (fm) => { fm.pageTitle = `${dv.page("Index").firstName}'s Portfolio - ${dv.current().name ? dv.current().name : dv.current().file.name}`; } ); ``
-%%
-# ``$= `${dv.page("Index").firstName} ${dv.page("Index").lastName} - Portfolio - ${dv.current().pageName ? dv.current().pageName : dv.current().file.name}` ``
+pageTags:: #WebsitePage #Project/Game #Shipped #Skill/Language/CS #Skill/GameEngine/Unity #Skill/DeveloperTool/Github #Skill/DeveloperTool/VisualStudio 
+pageRank:: 60
+projectName:: `$= dv.current().projectNameOverride ? dv.current().projectNameOverride : dv.current().file.name `
+projectNameOverride:: 
+projectImgSmall:: ![[Table Fable Title.avif]]
+projectImgLarge:: ![[Table Fable Title.avif]]
+projectLink:: https://github.com/Jonathan-Jay/Card-Game
+projectLink:: https://jjthething.itch.io/table-fable
+projectDateStart:: 2022-01-01
+projectDateEnd:: 2022-04-01
+projectDesc:: Table Fable is a two player, online card style game. Players battle each other using a variety of cards drawn from their deck. They can attack their opponent by playing monster cards on the board or use a spell card to gain the upper hand with various tricks.
+projectOrganization:: JayPEG
+projectTeam:: 2 Programmers
+projectTeam:: 2 Artists
+projectTeam:: 1 Game Designer
+projectTeam:: 1 Audio Engineer
+projectWorkRole:: Programmer
+projectWorkDescSmall:: Designed and developed interactive animations for cards and particle animations for ambient objects.
+projectWorkDescSmall:: Developed essential features for card interaction in 3D world and for spectating.
+projectWorkDescLarge:: Designed and developed interactive animations for cards and particle animations for ambient objects.
+projectWorkDescLarge:: Developed essential features for card interaction in 3D world and for spectating.
+
+Trailer Embed, Screenshots insert
+
 ```dataviewjs
-dv.table(["Engine", "Team", "Role", "Timeline"], [[
-[
-	dv.current().tags.filter(a => a.contains("GameEngine")).map(a => a.split("/")[2].replace("CustomOpenGL", "Custom OpenGL Engine")).join(", "),
-	dv.current().tags.filter(a => a.contains("Language")).map(a => a.split("/")[2].replace("CPP", "C++").replace("CS", "C#")).join(", ")
-],
-dv.current().projectTeam.split("\n"),
-[dv.current().projectRole],
-`${dv.current().projectDateStart.toFormat("MMM y")} - ${dv.current().projectDateEnd.toFormat("MMM y")}, ${dv.current().projectDateEnd.diff(dv.current().projectDateStart, "months").toHuman()}`.split(", ")
-]])
+app.fileManager.processFrontMatter(app.vault.getFileByPath(dv.current().file.path), (fm) => {
+	fm.pageTitle = `${dv.page("Index").firstName}'s Portfolio - ${dv.current().projectNameOverride ? dv.current().projectNameOverride : dv.current().file.name}`;
+});
+
+dv.span("DataviewJS frontmatter manager here");
 ```
-## Game Description
-* `$= dv.current().projectDesc`
+%%
+# `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FormatMainHeader(dv) `
+`$= dv.current().projectImgLarge `
+## Project Information
+
+> [!Info] Description
+> `$= dv.current().projectDesc `
+
+`````col
+````col-md
+> [!Info] Timeline
+> `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FormatHumanDate(dv.current().projectDateStart, dv.current().projectDateEnd).join("\n") `
+````
+
+````col-md
+> [!Info] Engine
+> `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().file.etags, "GameEngine") `
+> `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().file.etags, "Language") `
+````
+
+````col-md
+> [!Info] Team
+> `$= [dv.current().projectTeam].flat().join("\n") `
+````
+
+````col-md
+> [!Info] Links
+> `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().projectLink, "http").replace(", ", "\n") `
+````
+`````
+
+## Work Description
+```dataviewjs
+dv.span(dv.current().projectWorkDescLarge)
+```
 
 
 %%
@@ -50,7 +77,5 @@ Volume control
 Worldspace cursor
 Spectator Controller
 
-https://github.com/Jonathan-Jay/Card-Game
-https://jjthething.itch.io/table-fable
 https://youtu.be/vwXxnK0DSIo
 %%

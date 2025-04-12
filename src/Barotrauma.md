@@ -1,48 +1,71 @@
 ---
-tags:
-  - WebsitePage
-  - Project/Game
-  - Shipped
-  - Skill/Language/CPP
-  - Skill/GameEngine/CustomOpenGL
-  - Skill/LibraryFramework/Box2D
-  - Skill/LibraryFramework/FMOD
-  - Skill/DeveloperTool/Github
-  - Skill/DeveloperTool/VisualStudio
 pageTitle: Matthew's Portfolio - Barotrauma
-pageImg: "![[Barotrauma Title.png]]"
-pageDesc: |-
-  Developed essential features, behaviours, and AI for enemies.
-  Optimized code usage/readability and frametime/loadtime performance.
-  Merged GIT branches and solved merge conflicts.
-pageRank: 8
-projectDateStart: 2020-01-01
-projectDateEnd: 2020-04-01
-projectTeam: |-
-  3 Programmers
-  2 Artists
-  1 Game Designer
-projectRole: Lead Programmer
-projectDesc: 2D metroidvania with special suit upgrades and killing enemies.
 ---
 %%
-dataviewjs thing here
-``$= app.fileManager.processFrontMatter(app.vault.getFileByPath(dv.current().file.path), (fm) => { fm.pageTitle = `${dv.page("Index").firstName}'s Portfolio - ${dv.current().name ? dv.current().name : dv.current().file.name}`; } ); ``
-%%
-# ``$= `${dv.page("Index").firstName} ${dv.page("Index").lastName} - Portfolio - ${dv.current().pageName ? dv.current().pageName : dv.current().file.name}` ``
+pageTags:: #WebsitePage  #Project/Game  #Shipped  #Skill/Language/CPP  #Skill/GameEngine/CustomOpenGL  #Skill/LibraryFramework/Box2D  #Skill/LibraryFramework/FMOD #Skill/DeveloperTool/Github #Skill/DeveloperTool/VisualStudio
+pageRank:: 80
+projectName:: `$= dv.current().projectNameOverride ? dv.current().projectNameOverride : dv.current().file.name `
+projectNameOverride:: 
+projectImgSmall:: ![[Barotrauma Title.avif]]
+projectImgLarge:: ![[Barotrauma Title.avif]]
+projectLink:: https://github.com/Jonathan-Jay/JayPEG
+projectLink:: https://jjthething.itch.io/barotrauma
+projectDateStart:: 2020-01-01
+projectDateEnd:: 2020-04-01
+projectDesc:: Barotrauma is a 2D platformer metroidvania style game. Infiltrate the enemy base to defeat the big bad boss who is trying to take over the world. Steal their resources to upgrade your weapons and armour to break through the obstacles that have been set up to stop you. 
+projectOrganization:: JayPEG
+projectTeam:: 3 Programmers
+projectTeam:: 2 Artists
+projectTeam:: 1 Game Designer
+projectWorkRole:: Lead Programmer
+projectWorkDescSmall:: Developed essential features, behaviours, and AI for enemies.
+projectWorkDescSmall:: Optimized code usage/readability and frametime/loadtime performance.
+projectWorkDescLarge:: Developed essential features, behaviours, and AI for enemies.
+projectWorkDescLarge:: Optimized code usage/readability and frametime/loadtime performance.
+projectWorkDescLarge:: Merged GIT branches and solved merge conflicts.
+
 ```dataviewjs
-dv.table(["Engine", "Team", "Role", "Timeline"], [[
-[
-	dv.current().tags.filter(a => a.contains("GameEngine")).map(a => a.split("/")[2].replace("CustomOpenGL", "Custom OpenGL Engine")).join(", "),
-	dv.current().tags.filter(a => a.contains("Language")).map(a => a.split("/")[2].replace("CPP", "C++").replace("CS", "C#")).join(", ")
-],
-dv.current().projectTeam.split("\n"),
-[dv.current().projectRole],
-`${dv.current().projectDateStart.toFormat("MMM y")} - ${dv.current().projectDateEnd.toFormat("MMM y")}, ${dv.current().projectDateEnd.diff(dv.current().projectDateStart, "months").toHuman()}`.split(", ")
-]])
+app.fileManager.processFrontMatter(app.vault.getFileByPath(dv.current().file.path), (fm) => {
+	fm.pageTitle = `${dv.page("Index").firstName}'s Portfolio - ${dv.current().projectNameOverride ? dv.current().projectNameOverride : dv.current().file.name}`;
+});
+
+dv.span("DataviewJS frontmatter manager here");
 ```
-## Game Description
-`$= dv.current().projectDesc`
+%%
+# `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FormatMainHeader(dv) `
+`$= dv.current().projectImgLarge `
+## Project Information
+
+> [!Info] Description
+> `$= dv.current().projectDesc `
+
+`````col
+````col-md
+> [!Info] Timeline
+> `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FormatHumanDate(dv.current().projectDateStart, dv.current().projectDateEnd).join("\n") `
+````
+
+````col-md
+> [!Info] Engine
+> `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().file.etags, "GameEngine") `
+> `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().file.etags, "Language") `
+````
+
+````col-md
+> [!Info] Team
+> `$= [dv.current().projectTeam].flat().join("\n") `
+````
+
+````col-md
+> [!Info] Links
+> `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().projectLink, "http").replace(", ", "\n") `
+````
+`````
+
+## Work Description
+```dataviewjs
+dv.span(dv.current().projectWorkDescLarge)
+```
 
 
 %%
@@ -53,7 +76,5 @@ dv.current().projectTeam.split("\n"),
 * Loading Screen
 * Fix FPS physics speed dependency
 ## Source Code and Download:
-[https://github.com/Jonathan-Jay/JayPEG](https://github.com/Jonathan-Jay/JayPEG)
-https://jjthething.itch.io/barotrauma
 https://youtu.be/F1dTUuymjTU
 %%

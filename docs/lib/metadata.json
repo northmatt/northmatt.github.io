@@ -1,26 +1,26 @@
 {
   "vaultName": "src",
-  "lastExport": 1738821544175,
+  "lastExport": 1744432148590,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title show-ribbon",
   "useCustomHeadContent": false,
   "useCustomFavicon": false,
   "files": [
-    "image/Barotrauma Title.png",
-    "image/Celestial Conquest Title.png",
-    "image/Flappy Bird Title.png",
-    "image/Freedom of Samsar Title.jpg",
-    "image/Mecha Mayhem Title.png",
-    "image/Multiplayer Demo Title.png",
-    "image/Table Fable Title.png",
-    "image/Website Portfolio.png",
+    "Images/Barotrauma Title.avif",
+    "Images/Celestial Conquest Title.avif",
+    "Images/Flappy ML Title.avif",
+    "Images/Freedom of Samsar Title.avif",
+    "Images/Mecha Mayhem Title.avif",
+    "Images/Multiplayer Tech Demo Title.avif",
+    "Images/Table Fable Title.avif",
+    "Images/Website Portfolio.avif",
     "Barotrauma.md",
     "Celestial Conquest.md",
+    "Flappy ML.md",
     "Freedom of Samsar.md",
     "Index.md",
-    "Machine Learning Flappy Bird.md",
     "Mecha Mayhem.md",
-    "Multiplayer Game Tech Preview.md",
+    "Multiplayer Tech Demo.md",
     "Table Fable.md",
     "Website.md",
     "lib/fonts/94f2f163d4b698242fef.otf",
@@ -69,288 +69,304 @@
     "lib/styles/snippets.css"
   ],
   "fileInfo": {
-    "image/Barotrauma Title.png": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 321935,
-      "exportedPath": "image/barotrauma-title.png",
+    "Images/Barotrauma Title.avif": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 4926,
+      "exportedPath": "images/barotrauma-title.avif",
       "dependencies": []
     },
-    "image/Celestial Conquest Title.png": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 2204134,
-      "exportedPath": "image/celestial-conquest-title.png",
+    "Images/Celestial Conquest Title.avif": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 60280,
+      "exportedPath": "images/celestial-conquest-title.avif",
       "dependencies": []
     },
-    "image/Flappy Bird Title.png": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 46641,
-      "exportedPath": "image/flappy-bird-title.png",
+    "Images/Flappy ML Title.avif": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 11736,
+      "exportedPath": "images/flappy-ml-title.avif",
       "dependencies": []
     },
-    "image/Freedom of Samsar Title.jpg": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 1851132,
-      "exportedPath": "image/freedom-of-samsar-title.jpg",
+    "Images/Freedom of Samsar Title.avif": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 62699,
+      "exportedPath": "images/freedom-of-samsar-title.avif",
       "dependencies": []
     },
-    "image/Mecha Mayhem Title.png": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 398129,
-      "exportedPath": "image/mecha-mayhem-title.png",
+    "Images/Mecha Mayhem Title.avif": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 12641,
+      "exportedPath": "images/mecha-mayhem-title.avif",
       "dependencies": []
     },
-    "image/Multiplayer Demo Title.png": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 93914,
-      "exportedPath": "image/multiplayer-demo-title.png",
+    "Images/Multiplayer Tech Demo Title.avif": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 10205,
+      "exportedPath": "images/multiplayer-tech-demo-title.avif",
       "dependencies": []
     },
-    "image/Table Fable Title.png": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 763619,
-      "exportedPath": "image/table-fable-title.png",
+    "Images/Table Fable Title.avif": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 87137,
+      "exportedPath": "images/table-fable-title.avif",
       "dependencies": []
     },
-    "image/Website Portfolio.png": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 15398,
-      "exportedPath": "image/website-portfolio.png",
+    "Images/Website Portfolio.avif": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 27277,
+      "exportedPath": "images/website-portfolio.avif",
       "dependencies": []
     },
     "Barotrauma.md": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 2246,
+      "modifiedTime": 1744432148590,
+      "sourceSize": 3256,
       "exportedPath": "barotrauma.html",
-      "dependencies": []
-    },
-    "Celestial Conquest.md": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 3505,
-      "exportedPath": "celestial-conquest.html",
-      "dependencies": []
-    },
-    "Freedom of Samsar.md": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 2211,
-      "exportedPath": "freedom-of-samsar.html",
-      "dependencies": []
-    },
-    "Index.md": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 1301,
-      "exportedPath": "index.html",
       "dependencies": [
-        "image/freedom-of-samsar-title.jpg",
-        "image/celestial-conquest-title.png",
-        "image/mecha-mayhem-title.png",
-        "image/table-fable-title.png",
-        "image/barotrauma-title.png",
-        "image/website-portfolio.png",
-        "image/multiplayer-demo-title.png",
-        "image/flappy-bird-title.png"
+        "images/barotrauma-title.avif"
       ]
     },
-    "Machine Learning Flappy Bird.md": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 1862,
-      "exportedPath": "machine-learning-flappy-bird.html",
-      "dependencies": []
+    "Celestial Conquest.md": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 4633,
+      "exportedPath": "celestial-conquest.html",
+      "dependencies": [
+        "images/celestial-conquest-title.avif"
+      ]
+    },
+    "Flappy ML.md": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 2908,
+      "exportedPath": "flappy-ml.html",
+      "dependencies": [
+        "images/flappy-ml-title.avif"
+      ]
+    },
+    "Freedom of Samsar.md": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 3504,
+      "exportedPath": "freedom-of-samsar.html",
+      "dependencies": [
+        "images/freedom-of-samsar-title.avif"
+      ]
+    },
+    "Index.md": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 2440,
+      "exportedPath": "index.html",
+      "dependencies": [
+        "images/freedom-of-samsar-title.avif",
+        "images/celestial-conquest-title.avif",
+        "images/mecha-mayhem-title.avif",
+        "images/table-fable-title.avif",
+        "images/barotrauma-title.avif",
+        "images/website-portfolio.avif",
+        "images/multiplayer-tech-demo-title.avif",
+        "images/flappy-ml-title.avif"
+      ]
     },
     "Mecha Mayhem.md": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 2218,
+      "modifiedTime": 1744432148590,
+      "sourceSize": 3218,
       "exportedPath": "mecha-mayhem.html",
-      "dependencies": []
+      "dependencies": [
+        "images/mecha-mayhem-title.avif"
+      ]
     },
-    "Multiplayer Game Tech Preview.md": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 1769,
-      "exportedPath": "multiplayer-game-tech-preview.html",
-      "dependencies": []
+    "Multiplayer Tech Demo.md": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 2807,
+      "exportedPath": "multiplayer-tech-demo.html",
+      "dependencies": [
+        "images/multiplayer-tech-demo-title.avif"
+      ]
     },
     "Table Fable.md": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 2004,
+      "modifiedTime": 1744432148590,
+      "sourceSize": 3143,
       "exportedPath": "table-fable.html",
-      "dependencies": []
+      "dependencies": [
+        "images/table-fable-title.avif"
+      ]
     },
     "Website.md": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 3069,
+      "modifiedTime": 1744432148590,
+      "sourceSize": 4088,
       "exportedPath": "website.html",
+      "dependencies": [
+        "images/website-portfolio.avif"
+      ]
+    },
+    "images/barotrauma-title.avif": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 4926,
+      "exportedPath": "images/barotrauma-title.avif",
       "dependencies": []
     },
-    "image/freedom-of-samsar-title.jpg": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 1851132,
-      "exportedPath": "image/freedom-of-samsar-title.jpg",
+    "images/celestial-conquest-title.avif": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 60280,
+      "exportedPath": "images/celestial-conquest-title.avif",
       "dependencies": []
     },
-    "image/celestial-conquest-title.png": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 2204134,
-      "exportedPath": "image/celestial-conquest-title.png",
+    "images/flappy-ml-title.avif": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 11736,
+      "exportedPath": "images/flappy-ml-title.avif",
       "dependencies": []
     },
-    "image/mecha-mayhem-title.png": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 398129,
-      "exportedPath": "image/mecha-mayhem-title.png",
+    "images/freedom-of-samsar-title.avif": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 62699,
+      "exportedPath": "images/freedom-of-samsar-title.avif",
       "dependencies": []
     },
-    "image/table-fable-title.png": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 763619,
-      "exportedPath": "image/table-fable-title.png",
+    "images/mecha-mayhem-title.avif": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 12641,
+      "exportedPath": "images/mecha-mayhem-title.avif",
       "dependencies": []
     },
-    "image/barotrauma-title.png": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 321935,
-      "exportedPath": "image/barotrauma-title.png",
+    "images/table-fable-title.avif": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 87137,
+      "exportedPath": "images/table-fable-title.avif",
       "dependencies": []
     },
-    "image/website-portfolio.png": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 15398,
-      "exportedPath": "image/website-portfolio.png",
+    "images/website-portfolio.avif": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 27277,
+      "exportedPath": "images/website-portfolio.avif",
       "dependencies": []
     },
-    "image/multiplayer-demo-title.png": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 93914,
-      "exportedPath": "image/multiplayer-demo-title.png",
-      "dependencies": []
-    },
-    "image/flappy-bird-title.png": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 46641,
-      "exportedPath": "image/flappy-bird-title.png",
+    "images/multiplayer-tech-demo-title.avif": {
+      "modifiedTime": 1744432148590,
+      "sourceSize": 10205,
+      "exportedPath": "images/multiplayer-tech-demo-title.avif",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1738821544175,
+      "modifiedTime": 1744432148590,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1738821544175,
+      "modifiedTime": 1744432148590,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1738821544175,
+      "modifiedTime": 1744432148590,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1738821544175,
+      "modifiedTime": 1744432148590,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1738821544175,
+      "modifiedTime": 1744432148590,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1738821544175,
+      "modifiedTime": 1744432148590,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1738821544175,
+      "modifiedTime": 1744432148590,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1738821544175,
+      "modifiedTime": 1744432148590,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1738821544175,
+      "modifiedTime": 1744432148590,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1738821544175,
+      "modifiedTime": 1744432148590,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1738821544175,
+      "modifiedTime": 1744432148590,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1738821544175,
+      "modifiedTime": 1744432148590,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1738821544175,
+      "modifiedTime": 1744432148590,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/6155340132a851f6089e.svg": {
-      "modifiedTime": 1738821544175,
+      "modifiedTime": 1744432148590,
       "sourceSize": 315,
       "exportedPath": "lib/media/6155340132a851f6089e.svg",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1738821544175,
+      "modifiedTime": 1744432148590,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1738821544175,
+      "modifiedTime": 1744432148590,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 137228,
+      "modifiedTime": 1744432148590,
+      "sourceSize": 137466,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/other-plugins.css": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 2104,
+      "modifiedTime": 1744432148590,
+      "sourceSize": 5726,
       "exportedPath": "lib/styles/other-plugins.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1738821544175,
+      "modifiedTime": 1744432148590,
       "sourceSize": 262,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1738821544175,
+      "modifiedTime": 1744432148590,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
     },
     "lib/styles/snippets.css": {
-      "modifiedTime": 1738821544175,
-      "sourceSize": 123,
+      "modifiedTime": 1744432148590,
+      "sourceSize": 381,
       "exportedPath": "lib/styles/snippets.css",
       "dependencies": []
     }

@@ -1,41 +1,68 @@
 ---
-tags:
-  - WebsitePage
-  - Project/Website
-  - Skill/Language/HTML
-  - Skill/Language/CSS
-  - Skill/Language/YAML
-  - Skill/Language/Markdown
-  - Skill/DeveloperTool/Github
-  - Skill/DeveloperTool/Obsidian
-  - Skill/DeveloperTool/Krita
 pageTitle: Matthew's Portfolio - Website
-pageImg: "![[Website Portfolio.png]]"
-pageDesc: |-
-  Developed website in a database like structure.
-  Modified existing JS libraries for essential formatting fixes.
-pageRank: 10
-projectDateStart: 2025-01-01
-projectDateEnd: 2025-02-01
-projectTeam: 1 Developer
-projectRole: Lead Developer
-projectDesc: Created the site in [Obsidian](https://obsidian.md) and the repo can be found [here](https://github.com/northmatt/northmatt.github.io).
 ---
 %%
-dataviewjs thing here
-``$= app.fileManager.processFrontMatter(app.vault.getFileByPath(dv.current().file.path), (fm) => { fm.pageTitle = `${dv.page("Index").firstName}'s Portfolio - ${dv.current().name ? dv.current().name : dv.current().file.name}`; } ); ``
-%%
-# ``$= `${dv.page("Index").firstName} ${dv.page("Index").lastName} - Portfolio - ${dv.current().pageName ? dv.current().pageName : dv.current().file.name}` ``
+pageTags:: #WebsitePage #Project/Website #Skill/Language/HTML #Skill/Language/CSS #Skill/Language/YAML #Skill/Language/Markdown #Skill/DeveloperTool/Github #Skill/DeveloperTool/Obsidian #Skill/DeveloperTool/Krita 
+pageRank:: 100
+projectName:: `$= dv.current().projectNameOverride ? dv.current().projectNameOverride : dv.current().file.name `
+projectNameOverride:: 
+projectImgSmall:: ![[Website Portfolio.avif]]
+projectImgLarge:: ![[Website Portfolio.avif]]
+projectLink:: https://github.com/northmatt/northmatt.github.io
+projectDateStart:: 2025-01-01
+projectDateEnd:: 2025-04-01
+projectDesc:: This portfolio site was created in [Obsidian](https://obsidian.md).
+projectOrganization:: 
+projectTeam:: None
+projectWorkRole:: Lead Developer
+projectWorkDescSmall:: Developed website in a database like structure.
+projectWorkDescSmall:: Modified existing JS libraries for essential formatting fixes.
+projectWorkDescLarge:: Developed website in a database like structure.
+projectWorkDescLarge:: Modified existing JS libraries for essential formatting fixes.
+
+Trailer Embed, Screenshots insert
+
 ```dataviewjs
-dv.table(["Language", "Team", "Role", "Timeline"], [[
-dv.current().tags.filter(a => a.contains("Language")).map(a => a.split("/")[2].replace("CPP", "C++")),
-dv.current().projectTeam.split("\n"),
-[dv.current().projectRole],
-`${dv.current().projectDateStart.toFormat("MMM y")} - ${dv.current().projectDateEnd.toFormat("MMM y")}, ${dv.current().projectDateEnd.diff(dv.current().projectDateStart, "months").toHuman()}`.split(", ")
-]])
+app.fileManager.processFrontMatter(app.vault.getFileByPath(dv.current().file.path), (fm) => {
+	fm.pageTitle = `${dv.page("Index").firstName}'s Portfolio - ${dv.current().projectNameOverride ? dv.current().projectNameOverride : dv.current().file.name}`;
+});
+
+dv.span("DataviewJS frontmatter manager here");
 ```
-## Project Description
-* `$= dv.current().projectDesc`
+%%
+# `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FormatMainHeader(dv) `
+`$= dv.current().projectImgLarge `
+## Project Information
+
+> [!Info] Description
+> `$= dv.current().projectDesc `
+
+`````col
+````col-md
+> [!Info] Timeline
+> `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FormatHumanDate(dv.current().projectDateStart, dv.current().projectDateEnd).join("\n") `
+````
+
+````col-md
+> [!Info] Language
+> `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().file.etags, "Language") `
+````
+
+````col-md
+> [!Info] Team
+> `$= [dv.current().projectTeam].flat().join("\n") `
+````
+
+````col-md
+> [!Info] Links
+> `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().projectLink, "http").replace(", ", "\n") `
+````
+`````
+
+## Work Description
+```dataviewjs
+dv.span(dv.current().projectWorkDescLarge)
+```
 
 
 %%
@@ -50,13 +77,17 @@ Using `<CD></CD>` HTML tag:
 * Useful for when human readable markdown formatting could be used rather than not so human readable HTML formatting.
 
 Reduce font files (look at obsidian.css)
+Image asset optimization (jxl)
 Use Column Markdown plugin instead of dataview for project pages
-Project Links
 Horizontal navigation bar
 Templater for updating front matter
+Disable loading screen
 
 https://blacksmithgu.github.io/obsidian-dataview
 https://docs.obsidian.md/Home
+https://moment.github.io/luxon/api-docs/index.html
 
 `app.metadataCache.getCache(dv.current().file.path).frontmatter`
+`app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user`
+`app.plugins.plugins.dataview.api.luxon`
 %%
