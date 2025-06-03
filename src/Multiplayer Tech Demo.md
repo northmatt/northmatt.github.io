@@ -2,7 +2,7 @@
 pageTitle: Matthew's Portfolio - Multiplayer Tech Demo
 ---
 %%
-pageTags:: #WebsitePage #Project/TechPreview #Skill/Language/CS #Skill/GameEngine/Unity #Skill/DeveloperTool/Github #Skill/DeveloperTool/VisualStudio 
+pageTags:: #WebsitePage #Project/TechPreview #Skill/Language/CS #Skill/GameEngine/Unity #Skill/DeveloperTool/Github #Skill/DeveloperTool/VisualStudio #Skill/Work/Programmer/GameMechanic #Skill/Work/Programmer/Networking 
 pageRank:: 120
 projectName:: `$= dv.current().projectNameOverride ? dv.current().projectNameOverride : dv.current().file.name `
 projectNameOverride:: 
@@ -45,7 +45,7 @@ dv.span("DataviewJS frontmatter manager here");
 ````
 
 ````col-md
-> [!Info] Engine
+> [!Info] Engine & Languages
 > `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().file.etags, "GameEngine") `
 > `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().file.etags, "Language") `
 ````

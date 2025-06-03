@@ -2,12 +2,17 @@
  * Formats Dataview date range to be human readable
  */
 function format_date_human(date_start, date_end) {
-	if (typeof date_start != "object" || typeof date_end != "object") {
+	if (typeof date_start != "object" || typeof date_end != "object" && typeof date_end != "string") {
 		return [];
 	}
 	
 	var date_range = date_start.toFormat("MMM y");
 	var date_length = "";
+	
+	if (typeof date_end == "string") {
+		date_range += ` - ${date_end}`;
+		return [date_range, date_length];
+	}
 	
 	if (date_end.diff(date_start, "months").months >= 1) {
 		date_range += ` - ${date_end.toFormat("MMM y")}`;

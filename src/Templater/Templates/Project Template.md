@@ -42,7 +42,7 @@ dv.span("DataviewJS frontmatter manager here");
 ````
 
 ````col-md
-> [!Info] Engine
+> [!Info] Engine & Languages
 > `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().file.etags, "GameEngine") `
 > `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().file.etags, "Language") `
 ````

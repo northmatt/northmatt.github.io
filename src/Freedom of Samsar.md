@@ -2,7 +2,7 @@
 pageTitle: Matthew's Portfolio - Freedom of Samsar
 ---
 %%
-pageTags:: #WebsitePage #Project/Game #Shipped #Skill/Language/CS #Skill/Language/gdScript #Skill/GameEngine/Godot #Skill/DeveloperTool/Github #Skill/DeveloperTool/VisualStudio #Skill/DeveloperTool/Blender #Skill/DeveloperTool/Maya #Skill/DeveloperTool/SubstanceDesigner #Skill/DeveloperTool/OBS #Skill/DeveloperTool/DavinciResolve
+pageTags:: #WebsitePage #Project/Game #Shipped #Skill/Language/CS #Skill/Language/gdScript #Skill/Language/GSL #Skill/GameEngine/Godot #Skill/DeveloperTool/Github #Skill/DeveloperTool/VisualStudio #Skill/DeveloperTool/Blender #Skill/DeveloperTool/Maya #Skill/DeveloperTool/SubstanceDesigner #Skill/DeveloperTool/OBS #Skill/DeveloperTool/DavinciResolve #Skill/Work/Programmer/GameMechanic #Skill/Work/Programmer/Backend #Skill/Work/Programmer/Shader #Skill/Work/Programmer/AI #Skill/Work/Programmer/DeveloperTool #Skill/Work/Artist/Texture #Skill/Work/Artist/Model 
 pageRank:: 0
 projectName:: `$= dv.current().projectNameOverride ? dv.current().projectNameOverride : dv.current().file.name `
 projectNameOverride:: 
@@ -47,7 +47,7 @@ dv.span("DataviewJS frontmatter manager here");
 ````
 
 ````col-md
-> [!Info] Engine
+> [!Info] Engine & Languages
 > `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().file.etags, "GameEngine") `
 > `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().file.etags, "Language") `
 ````

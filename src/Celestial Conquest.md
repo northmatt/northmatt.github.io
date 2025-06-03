@@ -2,7 +2,7 @@
 pageTitle: Matthew's Portfolio - Celestial Conquest
 ---
 %%
-pageTags:: #WebsitePage #Project/Game #Shipped #Skill/Language/CS #Skill/GameEngine/Unity #Skill/DeveloperTool/Github #Skill/DeveloperTool/VisualStudio 
+pageTags:: #WebsitePage #Project/Game #Shipped #Skill/Language/CS #Skill/GameEngine/Unity #Skill/DeveloperTool/Github #Skill/DeveloperTool/VisualStudio #Skill/Work/Programmer/AI #Skill/Work/Programmer/GameMechanic 
 pageRank:: 20
 projectName:: `$= dv.current().projectNameOverride ? dv.current().projectNameOverride : dv.current().file.name `
 projectNameOverride:: 
@@ -46,7 +46,7 @@ dv.span("DataviewJS frontmatter manager here");
 ````
 
 ````col-md
-> [!Info] Engine
+> [!Info] Engine & Languages
 > `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().file.etags, "GameEngine") `
 > `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().file.etags, "Language") `
 ````

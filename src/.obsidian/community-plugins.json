@@ -4,5 +4,6 @@
   "templater-obsidian",
   "obsidian-basetag",
   "datepicker",
-  "obsidian-columns"
+  "obsidian-columns",
+  "tag-wrangler"
 ]

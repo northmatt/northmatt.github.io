@@ -1,23 +1,23 @@
 ---
-pageTitle: Matthew's Portfolio - Website
+pageTitle: Matthew's Portfolio - Portfolio Website
 ---
 %%
-pageTags:: #WebsitePage #Project/Website #Skill/Language/HTML #Skill/Language/CSS #Skill/Language/YAML #Skill/Language/Markdown #Skill/DeveloperTool/Github #Skill/DeveloperTool/Obsidian #Skill/DeveloperTool/Krita 
+pageTags:: #WebsitePage #Project/Website #Skill/Language/HTML #Skill/Language/CSS #Skill/Language/YAML #Skill/Language/Markdown #Skill/DeveloperTool/Github #Skill/DeveloperTool/Obsidian #Skill/DeveloperTool/Krita #Skill/Work/WebDesign 
 pageRank:: 100
 projectName:: `$= dv.current().projectNameOverride ? dv.current().projectNameOverride : dv.current().file.name `
 projectNameOverride:: 
-projectImgSmall:: ![[Website Portfolio.avif]]
-projectImgLarge:: ![[Website Portfolio.avif]]
+projectImgSmall:: ![[Portfolio Website.avif]]
+projectImgLarge:: ![[Portfolio Website.avif]]
 projectLink:: https://github.com/northmatt/northmatt.github.io
 projectDateStart:: 2025-01-01
-projectDateEnd:: 2025-04-01
+projectDateEnd:: Current
 projectDesc:: This portfolio site was created in [Obsidian](https://obsidian.md).
 projectOrganization:: 
 projectTeam:: None
 projectWorkRole:: Lead Developer
-projectWorkDescSmall:: Developed website in a database like structure.
+projectWorkDescSmall:: Developed website around a database oriented design.
 projectWorkDescSmall:: Modified existing JS libraries for essential formatting fixes.
-projectWorkDescLarge:: Developed website in a database like structure.
+projectWorkDescLarge:: Developed website around a database oriented design.
 projectWorkDescLarge:: Modified existing JS libraries for essential formatting fixes.
 
 Trailer Embed, Screenshots insert
@@ -44,7 +44,7 @@ dv.span("DataviewJS frontmatter manager here");
 ````
 
 ````col-md
-> [!Info] Language
+> [!Info] Languages
 > `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().file.etags, "Language") `
 ````
 
@@ -77,11 +77,16 @@ Using `<CD></CD>` HTML tag:
 * Useful for when human readable markdown formatting could be used rather than not so human readable HTML formatting.
 
 Reduce font files (look at obsidian.css)
-Image asset optimization (jxl)
-Use Column Markdown plugin instead of dataview for project pages
 Horizontal navigation bar
-Templater for updating front matter
 Disable loading screen
+Use [[Resource Images]] for giving #Skill thumbnails
+Use [[Tag Display Override]] for replacing how a #Skill is displayed textually
+Add Other/Networking skill to [[Table Fable]] and [[Multiplayer Tech Demo]] 
+CSS buttons for links
+Picture slides for project pages
+Project list in gridview (https://www.reddit.com/r/ObsidianMD/comments/1iyr0d5) or (https://forum.obsidian.md/t/85808)
+Show projectWorkRole under work description
+
 
 https://blacksmithgu.github.io/obsidian-dataview
 https://docs.obsidian.md/Home

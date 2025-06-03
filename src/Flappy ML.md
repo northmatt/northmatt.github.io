@@ -2,7 +2,7 @@
 pageTitle: Matthew's Portfolio - Flappy ML
 ---
 %%
-pageTags:: #WebsitePage #Project/TechPreview #Skill/Language/CS #Skill/GameEngine/Unity #Skill/LibraryFramework/PyTorch #Skill/LibraryFramework/UnityMLAgents #Skill/DeveloperTool/Github #Skill/DeveloperTool/VisualStudio
+pageTags:: #WebsitePage #Project/TechPreview #Skill/Language/CS #Skill/Language/Python #Skill/Language/YAML #Skill/GameEngine/Unity #Skill/LibraryFramework/PyTorch #Skill/LibraryFramework/UnityMLAgents #Skill/DeveloperTool/Github #Skill/DeveloperTool/VisualStudio #Skill/Work/Programmer/AI #Skill/Work/Programmer/GameMechanic 
 pageRank:: 120
 projectName:: `$= dv.current().projectNameOverride ? dv.current().projectNameOverride : dv.current().file.name `
 projectNameOverride:: 
@@ -45,7 +45,7 @@ dv.span("DataviewJS frontmatter manager here");
 ````
 
 ````col-md
-> [!Info] Engine
+> [!Info] Engine & Languages
 > `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().file.etags, "GameEngine") `
 > `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().file.etags, "Language") `
 ````
