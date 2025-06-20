@@ -17,8 +17,8 @@ projectTeam:: 2 Programmers
 projectTeam:: 1 Artist
 projectTeam:: 1 Game Designer
 projectWorkRole:: Lead Programmer
-projectWorkDescSmall:: Developed shaders, enemy AI, DFAs/UFAs (state machines), character status effects, attribute systems, renderdoc plugin, and various other features essential to the game.
-projectWorkDescSmall:: Developed textures for models and modified existing models and UV maps.
+projectWorkDescSmall:: Developed AI, shaders, state machines, status effects, attribute systems, and other features essential to the game.
+projectWorkDescSmall:: Developed textures and modified existing models and UV maps.
 projectWorkDescLarge:: Developed shaders, enemy AI, DFAs/UFAs (state machines), character status effects, attribute systems, renderdoc plugin, and various other features essential to the game.
 projectWorkDescLarge:: Developed textures for models and modified existing models and UV maps.
 projectWorkDescLarge:: Helped troubleshoot issues with unsupported GLTF model exports from Maya.

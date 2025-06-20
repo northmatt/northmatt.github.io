@@ -86,6 +86,7 @@ CSS buttons for links
 Picture slides for project pages
 Project list in gridview (https://www.reddit.com/r/ObsidianMD/comments/1iyr0d5) or (https://forum.obsidian.md/t/85808)
 Show projectWorkRole under work description
+Add Skill/DevTool/Git/Client/GithubDesktop (GitKraken, Fork), Skill/DevTool/Git/Forge/Github, etc
 
 
 https://blacksmithgu.github.io/obsidian-dataview

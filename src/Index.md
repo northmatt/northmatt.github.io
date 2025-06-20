@@ -21,14 +21,17 @@ dv.span("DataviewJS frontmatter manager here");
 ## About Me
 I'm a video game developer who has shipped `$= ["no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"][dv.pages("#WebsitePage AND #Shipped").length]` games on ItchIO. My expertise is in systems, AI, and gameplay programming. However I've had experience in working with other parts of game development such as shader programming, level design, systems design, modeling, and texturing. 
 ## Project Links
-```dataviewjs
-dv.table(
-	["", ""], 
-	dv.pages("#WebsitePage AND #Project and -#Dataview/Exlude").sort(b => b.pageRank).map(b => [
-		dv.parse(`[![${b.file.name}|250](${app.vault.getResourcePath(b.projectImgSmall)})](<${b.file.name}>)`),
-		b.projectWorkDescSmall
-	])
-);
+```datacards
+TABLE join(projectWorkDescSmall, "
+") as Desc, projectImgSmall FROM #WebsitePage and #Project and -#Dataview/Exlude
+SORT pageRank
+
+// Settings
+preset: portrait
+imageProperty: projectImgSmall
+imageFit: contain
+showLabels: false
+enableClickableCards: true
 ```
 
 

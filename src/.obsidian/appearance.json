@@ -4,6 +4,7 @@
     "EditorWidth",
     "ThinColumns",
     "ThinHeader",
-    "CenterAlignHeader"
+    "CenterAlignHeader",
+    "CardViewNewline"
   ]
 }

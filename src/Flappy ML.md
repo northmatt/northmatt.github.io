@@ -15,8 +15,8 @@ projectDesc:: Flappy ML is a tech preview for machine learning. A neural network
 projectOrganization:: 
 projectTeam:: None
 projectWorkRole:: Lead Programmer
-projectWorkDescSmall:: Trained a neural network with reinforcement learning to play the game and compete with the player.
-projectWorkDescSmall:: Used PyTorch with CUDA and Unity ML Agents libraries for training the network.
+projectWorkDescSmall:: Trained a neural network with reinforcement learning.
+projectWorkDescSmall:: Used PyTorch with CUDA for training the network.
 projectWorkDescLarge:: Trained a neural network with reinforcement learning to play the game and compete with the player.
 projectWorkDescLarge:: Used PyTorch with CUDA and Unity ML Agents libraries for training the network.
 projectWorkDescLarge:: Used Tensorboard for viewing realtime training information.

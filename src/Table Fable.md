@@ -19,8 +19,8 @@ projectTeam:: 2 Artists
 projectTeam:: 1 Game Designer
 projectTeam:: 1 Audio Engineer
 projectWorkRole:: Programmer
-projectWorkDescSmall:: Designed and developed interactive animations for cards and particle animations for ambient objects.
-projectWorkDescSmall:: Developed essential features for card interaction in 3D world and for spectating.
+projectWorkDescSmall:: Developed interactive and particle animations for feedback/ambience.
+projectWorkDescSmall:: Developed essential features for card interaction.
 projectWorkDescLarge:: Designed and developed interactive animations for cards and particle animations for ambient objects.
 projectWorkDescLarge:: Developed essential features for card interaction in 3D world and for spectating.
 
