@@ -9,14 +9,12 @@ firstName:: Matthew
 lastName:: North
 
 ```dataviewjs
-app.fileManager.processFrontMatter(app.vault.getFileByPath(dv.current().file.path), (fm) => {
-	fm.pageTitle = `${dv.page("Index").firstName}'s Portfolio - ${dv.current().projectNameOverride ? dv.current().projectNameOverride : dv.current().file.name}`;
-});
-
-dv.span("DataviewJS frontmatter manager here");
+await dv.view("Views/ProcessFrontMatter")
 ```
 %%
-# `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FormatMainHeader(dv) `
+```dataviewjs
+await dv.view("Views/FormatMainHeader")
+```
 <cd><center>Profiles: [Github](https://github.com/northmatt) | [ItchIO](https://northmatt.itch.io)</center></cd>
 ## About Me
 I'm a video game developer who has shipped `$= ["no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"][dv.pages("#WebsitePage AND #Shipped").length]` games on ItchIO. My expertise is in systems, AI, and gameplay programming. However I've had experience in working with other parts of game development such as shader programming, level design, systems design, modeling, and texturing. 

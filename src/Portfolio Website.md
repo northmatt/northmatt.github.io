@@ -2,7 +2,7 @@
 pageTitle: Matthew's Portfolio - Portfolio Website
 ---
 %%
-pageTags:: #WebsitePage #Project/Website #Skill/Language/HTML #Skill/Language/CSS #Skill/Language/YAML #Skill/Language/Markdown #Skill/DeveloperTool/Github #Skill/DeveloperTool/Obsidian #Skill/DeveloperTool/Krita #Skill/Work/WebDesign 
+pageTags:: #WebsitePage #Project/Website #Skill/Language/HTML #Skill/Language/CSS #Skill/Language/YAML #Skill/Language/Markdown #Skill/DeveloperTool/Git/Client/GithubDesktop #Skill/DeveloperTool/Git/Client/Fork #Skill/DeveloperTool/Git/Forge/Github #Skill/DeveloperTool/Obsidian #Skill/DeveloperTool/Krita #Skill/Work/WebDesign 
 pageRank:: 100
 projectName:: `$= dv.current().projectNameOverride ? dv.current().projectNameOverride : dv.current().file.name `
 projectNameOverride:: 
@@ -23,14 +23,12 @@ projectWorkDescLarge:: Modified existing JS libraries for essential formatting f
 Trailer Embed, Screenshots insert
 
 ```dataviewjs
-app.fileManager.processFrontMatter(app.vault.getFileByPath(dv.current().file.path), (fm) => {
-	fm.pageTitle = `${dv.page("Index").firstName}'s Portfolio - ${dv.current().projectNameOverride ? dv.current().projectNameOverride : dv.current().file.name}`;
-});
-
-dv.span("DataviewJS frontmatter manager here");
+await dv.view("Views/ProcessFrontMatter")
 ```
 %%
-# `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FormatMainHeader(dv) `
+```dataviewjs
+await dv.view("Views/FormatMainHeader")
+```
 `$= dv.current().projectImgLarge `
 ## Project Information
 
@@ -40,12 +38,12 @@ dv.span("DataviewJS frontmatter manager here");
 `````col
 ````col-md
 > [!Info] Timeline
-> `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FormatHumanDate(dv.current().projectDateStart, dv.current().projectDateEnd).join("\n") `
+> `$= await dv.view("Views/FormatHumanDate", [dv.current().projectDateStart, dv.current().projectDateEnd]) `
 ````
 
 ````col-md
 > [!Info] Languages
-> `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().file.etags, "Language") `
+> `$= await dv.view("Views/FilterRename", [dv.current().file.etags, "Language"]) `
 ````
 
 ````col-md
@@ -55,7 +53,7 @@ dv.span("DataviewJS frontmatter manager here");
 
 ````col-md
 > [!Info] Links
-> `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().projectLink, "http").replace(", ", "\n") `
+> `$= await dv.view("Views/FilterRename", [dv.current().projectLink, "http"]) `
 ````
 `````
 
@@ -77,21 +75,17 @@ Using `<CD></CD>` HTML tag:
 * Useful for when human readable markdown formatting could be used rather than not so human readable HTML formatting.
 
 Reduce font files (look at obsidian.css)
-Horizontal navigation bar
 Disable loading screen
+Horizontal navigation bar
 Use [[Resource Images]] for giving #Skill thumbnails
 Use [[Tag Display Override]] for replacing how a #Skill is displayed textually
-Add Other/Networking skill to [[Table Fable]] and [[Multiplayer Tech Demo]] 
 CSS buttons for links
 Picture slides for project pages
-Project list in gridview (https://www.reddit.com/r/ObsidianMD/comments/1iyr0d5) or (https://forum.obsidian.md/t/85808)
 Show projectWorkRole under work description
-Add Skill/DevTool/Git/Client/GithubDesktop (GitKraken, Fork), Skill/DevTool/Git/Forge/Github, etc
 
-
-https://blacksmithgu.github.io/obsidian-dataview
-https://docs.obsidian.md/Home
-https://moment.github.io/luxon/api-docs/index.html
+[Obsidian API](https://docs.obsidian.md/Home)
+[Dataview API](https://blacksmithgu.github.io/obsidian-dataview)
+[Luxon API](https://moment.github.io/luxon/api-docs/index.html)
 
 `app.metadataCache.getCache(dv.current().file.path).frontmatter`
 `app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user`

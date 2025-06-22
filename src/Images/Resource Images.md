@@ -2,7 +2,10 @@
 pageTags:: #Dataview/Exlude 
 %%
 
-#Skill/DeveloperTool/Github:: 
+#Skill/DeveloperTool/Git/Forge/Github:: 
+#Skill/DeveloperTool/Git/Client/GithubDesktop:: 
+#Skill/DeveloperTool/Git/Client/Fork:: 
+#Skill/DeveloperTool/Git/Client/GitKraken:: 
 #Skill/DeveloperTool/VisualStudio:: 
 
 #Skill/Language/CS:: 

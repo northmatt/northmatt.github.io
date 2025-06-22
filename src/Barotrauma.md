@@ -2,7 +2,7 @@
 pageTitle: Matthew's Portfolio - Barotrauma
 ---
 %%
-pageTags:: #WebsitePage  #Project/Game  #Shipped  #Skill/Language/CPP  #Skill/GameEngine/CustomOpenGL  #Skill/LibraryFramework/Box2D  #Skill/LibraryFramework/FMOD #Skill/DeveloperTool/Github #Skill/DeveloperTool/PhotoShop #Skill/DeveloperTool/VisualStudio #Skill/Work/Programmer/AI #Skill/Work/Programmer/GameMechanic #Skill/Work/Programmer/Physics #Skill/Work/Programmer/Backend 
+pageTags:: #WebsitePage  #Project/Game  #Shipped  #Skill/Language/CPP  #Skill/GameEngine/CustomOpenGL  #Skill/LibraryFramework/Box2D  #Skill/LibraryFramework/FMOD #Skill/DeveloperTool/Git/Client/GitKraken #Skill/DeveloperTool/Git/Forge/Github #Skill/DeveloperTool/PhotoShop #Skill/DeveloperTool/VisualStudio #Skill/Work/Programmer/AI #Skill/Work/Programmer/GameMechanic #Skill/Work/Programmer/Physics #Skill/Work/Programmer/Backend 
 pageRank:: 80
 projectName:: `$= dv.current().projectNameOverride ? dv.current().projectNameOverride : dv.current().file.name `
 projectNameOverride:: 
@@ -25,14 +25,12 @@ projectWorkDescLarge:: Optimized code usage/readability and frametime/loadtime p
 projectWorkDescLarge:: Merged GIT branches and solved merge conflicts.
 
 ```dataviewjs
-app.fileManager.processFrontMatter(app.vault.getFileByPath(dv.current().file.path), (fm) => {
-	fm.pageTitle = `${dv.page("Index").firstName}'s Portfolio - ${dv.current().projectNameOverride ? dv.current().projectNameOverride : dv.current().file.name}`;
-});
-
-dv.span("DataviewJS frontmatter manager here");
+await dv.view("Views/ProcessFrontMatter")
 ```
 %%
-# `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FormatMainHeader(dv) `
+```dataviewjs
+await dv.view("Views/FormatMainHeader")
+```
 `$= dv.current().projectImgLarge `
 ## Project Information
 
@@ -42,13 +40,13 @@ dv.span("DataviewJS frontmatter manager here");
 `````col
 ````col-md
 > [!Info] Timeline
-> `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FormatHumanDate(dv.current().projectDateStart, dv.current().projectDateEnd).join("\n") `
+> `$= await dv.view("Views/FormatHumanDate", [dv.current().projectDateStart, dv.current().projectDateEnd]) `
 ````
 
 ````col-md
 > [!Info] Engine & Languages
-> `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().file.etags, "GameEngine") `
-> `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().file.etags, "Language") `
+> `$= await dv.view("Views/FilterRename", [dv.current().file.etags, "GameEngine"]) `
+> `$= await dv.view("Views/FilterRename", [dv.current().file.etags, "Language"]) `
 ````
 
 ````col-md
@@ -58,7 +56,7 @@ dv.span("DataviewJS frontmatter manager here");
 
 ````col-md
 > [!Info] Links
-> `$= app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.FilterRename(dv.current().projectLink, "http").replace(", ", "\n") `
+> `$= await dv.view("Views/FilterRename", [dv.current().projectLink, "http"]) `
 ````
 `````
 

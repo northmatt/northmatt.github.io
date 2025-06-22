@@ -11,7 +11,7 @@ function format_date_human(date_start, date_end) {
 	
 	if (typeof date_end == "string") {
 		date_range += ` - ${date_end}`;
-		return [date_range, date_length];
+		return [date_range, date_length].join("\n");
 	}
 	
 	if (date_end.diff(date_start, "months").months >= 1) {
@@ -22,7 +22,7 @@ function format_date_human(date_start, date_end) {
 		date_length = date_end.diff(date_start, "days").toHuman();
 	}
 	
-    return [date_range, date_length];
+    return [date_range, date_length].join("\n");
 }
 
-module.exports = format_date_human;
+return format_date_human(input[0], input[1]);
