@@ -1,5 +1,5 @@
 %%
-pageTags:: #Dataview/Exlude 
+pageTags:: #Dataview/Exlude #Dataview/CustomScript/ResourceImage 
 %%
 
 #Skill/DeveloperTool/Git/Forge/Github:: 

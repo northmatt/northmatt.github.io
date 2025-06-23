@@ -37,24 +37,15 @@ enableClickableCards: true
 ## Skillsets
 ### Game Engines
 ```dataviewjs
-var tpUser = app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user;
-dv.span(
-	[...new Set(tpUser.FilterRename(dv.pages("#WebsitePage AND #Project and -#Dataview/Exlude").file.etags, "GameEngine").split(", "))]
-);
+await dv.view("Views/FilterRename", [dv.pages("#WebsitePage and #Project and -#Dataview/Exlude").file.etags, "GameEngine", ""])
 ```
 ### Languages
 ```dataviewjs
-var tpUser = app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user;
-dv.span(
-	[...new Set(tpUser.FilterRename(dv.pages("#WebsitePage AND #Project and -#Dataview/Exlude").file.etags, "Language").split(", "))]
-);
+await dv.view("Views/FilterRename", [dv.pages("#WebsitePage and #Project and -#Dataview/Exlude").file.etags, "Language", ""])
 ```
 ### Tools
 ```dataviewjs
-var tpUser = app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user;
-dv.span(
-	[...new Set(tpUser.FilterRename(dv.pages("#WebsitePage AND #Project and -#Dataview/Exlude").file.etags, "DeveloperTool").split(", "))]
-);
+await dv.view("Views/FilterRename", [dv.pages("#WebsitePage and #Project and -#Dataview/Exlude").file.etags, "DeveloperTool", ""])
 ```
 ## Profiles
 ### Contact

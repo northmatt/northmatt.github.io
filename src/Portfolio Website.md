@@ -70,7 +70,7 @@ Modified `webpage-html-export.main.Webpage.AddTitle()`:
 Modified `webpage-html-export.main._MarkdownRendererInternal2.renderMarkdownView()`:
 * Line after "await Promise.all(promises);" had "await new Promise(resolve => setTimeout(resolve, 100));" added
 
-Using `<CD></CD>` HTML tag:
+Using `<cd></cd>` HTML tag:
 * Tags that dont exist allow for some markdown inside inline HTML code. Won't show up in editing view, only reading view and HTML exports.
 * Useful for when human readable markdown formatting could be used rather than not so human readable HTML formatting.
 
@@ -82,6 +82,7 @@ Use [[Tag Display Override]] for replacing how a #Skill is displayed textually
 CSS buttons for links
 Picture slides for project pages
 Show projectWorkRole under work description
+Add Fruit Punch Drunk Rush, Newegg/Reddit scrapers, PC builds
 
 [Obsidian API](https://docs.obsidian.md/Home)
 [Dataview API](https://blacksmithgu.github.io/obsidian-dataview)
