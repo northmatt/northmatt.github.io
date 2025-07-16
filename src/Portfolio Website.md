@@ -2,8 +2,8 @@
 pageTitle: Matthew's Portfolio - Portfolio Website
 ---
 %%
-pageTags:: #WebsitePage #Project/Website #Skill/Language/HTML #Skill/Language/CSS #Skill/Language/YAML #Skill/Language/Markdown #Skill/DeveloperTool/Git/Client/GithubDesktop #Skill/DeveloperTool/Git/Client/Fork #Skill/DeveloperTool/Git/Forge/Github #Skill/DeveloperTool/Obsidian #Skill/DeveloperTool/Krita #Skill/Work/WebDesign 
-pageRank:: 100
+pageTags:: #WebsitePage #Project/Web #Skill/Language/JS #Skill/Language/HTML #Skill/Language/CSS #Skill/Language/YAML #Skill/Language/Markdown #Skill/DeveloperTool/Git/Client/GithubDesktop #Skill/DeveloperTool/Git/Client/Fork #Skill/DeveloperTool/Git/Forge/Github #Skill/DeveloperTool/Obsidian #Skill/DeveloperTool/Krita #Skill/Work/WebDesign 
+pageRank:: 0
 projectName:: `$= dv.current().projectNameOverride ? dv.current().projectNameOverride : dv.current().file.name `
 projectNameOverride:: 
 projectImgSmall:: ![[Portfolio Website.avif]]
@@ -57,7 +57,7 @@ await dv.view("Views/FormatMainHeader")
 ````
 `````
 
-## Work Description
+## Roles and Responsibilities
 ```dataviewjs
 dv.span(dv.current().projectWorkDescLarge)
 ```
@@ -65,10 +65,11 @@ dv.span(dv.current().projectWorkDescLarge)
 
 %%
 Modified `webpage-html-export.main.Webpage.AddTitle()`:
-* Code block with output log "Replacing {firstHeaderText} header because it was H1 at the top of the page" now does the same as the code block with output log "Using {firstHeaderText} header as title because it was H1 at the top of the page". This stops the page's first header being replaced by the text in the title property when the former code block is executed.
-* Useful when file name isnt suitable to be used (ex: index.html), when first header is a more descriptive and longer name than the title, and/or when first header has formatting.
+* Comment out "firstHeader.remove()" functions and "this.sizerElement.prepend(titleEl)" function.
+* This stops the page's first header being replaced by the text in the title property.
 Modified `webpage-html-export.main._MarkdownRendererInternal2.renderMarkdownView()`:
 * Line after "await Promise.all(promises);" had "await new Promise(resolve => setTimeout(resolve, 100));" added
+* This allows dataview queries to render
 
 Using `<cd></cd>` HTML tag:
 * Tags that dont exist allow for some markdown inside inline HTML code. Won't show up in editing view, only reading view and HTML exports.
@@ -81,8 +82,8 @@ Use [[Resource Images]] for giving #Skill thumbnails
 Use [[Tag Display Override]] for replacing how a #Skill is displayed textually
 CSS buttons for links
 Picture slides for project pages
-Show projectWorkRole under work description
-Add Fruit Punch Drunk Rush, Newegg/Reddit scrapers, PC builds
+Show projectWorkRole under Roles and Responsibilities
+Add Fruit Punch Drunk Rush, PC builds
 
 [Obsidian API](https://docs.obsidian.md/Home)
 [Dataview API](https://blacksmithgu.github.io/obsidian-dataview)

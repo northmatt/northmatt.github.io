@@ -2,7 +2,7 @@
 pageTitle: Matthew's Portfolio - Flappy ML
 ---
 %%
-pageTags:: #WebsitePage #Project/TechPreview #Skill/Language/CS #Skill/Language/Python #Skill/Language/YAML #Skill/GameEngine/Unity #Skill/LibraryFramework/PyTorch #Skill/LibraryFramework/UnityMLAgents #Skill/DeveloperTool/Git/Client/GithubDesktop #Skill/DeveloperTool/Git/Forge/Github #Skill/DeveloperTool/VisualStudio #Skill/Work/Programmer/AI #Skill/Work/Programmer/GameMechanic 
+pageTags:: #WebsitePage #Project/TechPreview #Skill/Language/CS #Skill/Language/Python #Skill/Language/YAML #Skill/Environment/Anaconda #Skill/PackageManager/PIP #Skill/GameEngine/Unity #Skill/LibraryFramework/PyTorch #Skill/LibraryFramework/UnityMLAgents #Skill/DeveloperTool/Git/Client/GithubDesktop #Skill/DeveloperTool/Git/Forge/Github #Skill/DeveloperTool/VisualStudio #Skill/Work/Programmer/AI #Skill/Work/Programmer/GameMechanic 
 pageRank:: 120
 projectName:: `$= dv.current().projectNameOverride ? dv.current().projectNameOverride : dv.current().file.name `
 projectNameOverride:: 
@@ -59,7 +59,7 @@ await dv.view("Views/FormatMainHeader")
 ````
 `````
 
-## Work Description
+## Roles and Responsibilities
 ```dataviewjs
 dv.span(dv.current().projectWorkDescLarge)
 ```

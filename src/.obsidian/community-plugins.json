@@ -1,10 +1,11 @@
 [
   "dataview",
-  "webpage-html-export",
   "templater-obsidian",
   "obsidian-basetag",
   "datepicker",
   "obsidian-columns",
   "tag-wrangler",
-  "data-cards"
+  "data-cards",
+  "global-search-and-replace",
+  "webpage-html-export"
 ]

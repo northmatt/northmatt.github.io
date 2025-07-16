@@ -56,7 +56,7 @@ await dv.view("Views/FormatMainHeader")
 ````
 `````
 
-## Work Description
+## Roles and Responsibilities
 ```dataviewjs
 dv.span(dv.current().projectWorkDescLarge)
 ```
