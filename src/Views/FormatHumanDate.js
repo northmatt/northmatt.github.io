@@ -16,7 +16,7 @@ function format_date_human(date_start, date_end) {
 	
 	if (date_end.diff(date_start, "months").months >= 1) {
 		date_range += ` - ${date_end.toFormat("MMM y")}`;
-		date_length = date_end.diff(date_start, "months").toHuman();
+		date_length = date_end.diff(date_start, "months").toHuman({ maximumSignificantDigits: 2 });
 	}
 	else {
 		date_length = date_end.diff(date_start, "days").toHuman();

@@ -15,10 +15,10 @@ projectDesc:: Scrapes a subreddit for a specific query and sends a Discord notif
 projectOrganization:: 
 projectTeam:: None
 projectWorkRole:: Lead Developer
-projectWorkDescSmall:: Used HTTPS fetch requests for efficient scraping.
-projectWorkDescSmall:: Reversed engineered Reddit's API for anomality.
-projectWorkDescLarge:: Used HTTPS fetch requests for efficient scraping.
-projectWorkDescLarge:: Reversed engineered Reddit's API for anomality.
+projectWorkDescSmall:: Utilized HTTPS fetch requests for low bandwidth and low latency scraping.
+projectWorkDescSmall:: Reversed engineered Reddit's API to not require developer API token.
+projectWorkDescLarge:: Utilized HTTPS fetch requests for low bandwidth and low latency scraping.
+projectWorkDescLarge:: Reversed engineered Reddit's API to not require developer API token.
 
 Trailer Embed, Screenshots insert
 
